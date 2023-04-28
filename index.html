@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <p>Please fill out this form with the required information</p>
+    <form action="https://www.google.com" method="post"> <!-- This URL does not allow post, ignore it. -->
+    <!-- Personal Info section -->
+    <fieldset>
+        <label for="fname">Enter your First Name: </label>
+            <input id="fname" type="text" name="personalinfo" required>
+        <label for="lname">Enter your Last Name: </label>
+            <input id="lname" type="text" name="personalinfo" required>
+        <label for="email">Enter your Email: </label>
+            <input id="email" type="email" name="personalinfo" required>
+        <label for="pword">Create your password: </label>
+            <input id="pword" type="password" name="personalinfo" pattern="[a-z0-5]{8,}" required>
+    </fieldset>
+    <!-- Account Info section -->
+    <fieldset>
+        <label for="personalacc"><input id="personalacc" type="radio" name="account type" class="inline"> Personal Account</label>
+        <label for="businessacc"><input id="businessacc" type="radio" name="account type" class="inline"> Business Account</label>
+        <label for="tnc"><input id="tnc" type="checkbox" class="inline"> I accept the <a href="#">terms and conditions</a></label>
+    </fieldset>
+    <!-- Input section -->
+    <fieldset>
+        <label for="propic">Upload Profile Picture: 
+            <input id="propic" type="file"></label>
+        <label for="age">Input your age (years): 
+            <input id="age" type="number"></label>
+        <label for="reference">How did you hear about us: 
+            <!-- Dropdown List for Referer -->
+            <select id="reference" name="reference">
+            <option value="(select one)">(select one)</option>
+            <option value="Google">Google</option>
+            <option value="Youtube">Youtube</option>
+            <option value="freecodecampnews">freecodecampnews</option>
+            </select></label>    
+        <label for="bio">Provide a bio: 
+            <textarea name="bio" id="bio" cols="30" rows="3" placeholder="I like coding because.."></textarea></label>
+    </fieldset>
+    <!-- Button at the end -->
+    <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

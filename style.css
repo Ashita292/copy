@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #1b1b32;
+    color: #f5f6f7;  
+}
+
+h1, p{
+    margin: 1em;
+    text-align: center;
+}
+
+form{
+    margin: 0 auto;
+    padding-bottom: 2em;
+    min-width: 300px;
+    max-width: 500px;
+    width: 60vw; 
+}
+
+fieldset{
+    /* To remove fieldset border and keep only bottom line */
+    border: none;
+    border-bottom: 3px solid #3B3B4F;
+    padding: 2rem 0 2rem 0;
+    margin: 0;
+}
+
+label{
+display: block;
+margin: 2rem 0;
+}
+
+input, textarea{
+    background-color: #0a081a;
+    border: none;
+    color: #f5f6f7;
+    min-height: 2em;
+}
+
+input, select, textarea{
+    width: 100%;
+    margin: 10px 0 0 0;
+}
+
+/* class for account type */
+.inline{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+/* remove border before submit button */
+fieldset:last-of-type{
+    border-bottom: none;
+}
+
+input[type="submit"]{
+    background-color: #3B3B4F;
+    border: 1px solid white;
+    color: #f5f6f7;
+    display: block;
+    margin: 1em auto;
+    width: 60%;
+    min-width: 300px;
+    height: 2em;
+    font-size: 1.1rem;
+}
+
+a{
+    /* Change color of TNC link  */
+    color: #dfdfe2;
+}
